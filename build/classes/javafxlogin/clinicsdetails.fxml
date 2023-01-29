@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.effect.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="710.0" prefWidth="824.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxlogin.ClinicsdetailsController">
+   <children>
+      <BorderPane fx:id="maincl" prefHeight="710.0" prefWidth="824.0">
+         <center>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Label layoutX="143.0" layoutY="133.0" text="ID:">
+                     <font>
+                        <Font name="Calibri Bold" size="22.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="460.0" layoutY="133.0" text="Name Clinic:">
+                     <font>
+                        <Font name="Calibri Bold" size="22.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="265.0" layoutY="246.0" text="Doctor Work In:">
+                     <font>
+                        <Font name="Calibri Bold" size="22.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="id_text" layoutX="177.0" layoutY="131.0" onAction="#id_textt" />
+                  <TextField fx:id="doctorcl_text" layoutX="424.0" layoutY="243.0" onAction="#doctorcl_textt" />
+                  <TextField fx:id="namecl_text" layoutX="582.0" layoutY="131.0" onAction="#namecl_textt" />
+               </children>
+            </AnchorPane>
+         </center>
+         <top>
+            <AnchorPane prefHeight="52.0" prefWidth="824.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Button fx:id="add_clinics" layoutX="43.0" layoutY="7.0" mnemonicParsing="false" onAction="#add_clinicss" prefHeight="38.0" prefWidth="136.0" style="-fx-background-color: #3dafc1; -fx-background-radius: 100;" text="Add Clinics">
+                     <effect>
+                        <Lighting diffuseConstant="1.37" specularConstant="0.39" specularExponent="15.61" surfaceScale="2.97">
+                           <bumpInput>
+                              <Shadow />
+                           </bumpInput>
+                           <light>
+                              <Light.Distant />
+                           </light>
+                        </Lighting>
+                     </effect>
+                     <font>
+                        <Font name="Calibri Bold" size="19.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="delete_cl" layoutX="194.0" layoutY="7.0" mnemonicParsing="false" onAction="#delete_cli" prefHeight="38.0" prefWidth="136.0" style="-fx-background-color: #3dafc1; -fx-background-radius: 100;" text="Delete Clinics">
+                     <effect>
+                        <Lighting diffuseConstant="1.37" specularConstant="0.39" specularExponent="15.61" surfaceScale="2.97">
+                           <bumpInput>
+                              <Shadow />
+                           </bumpInput>
+                           <light>
+                              <Light.Distant />
+                           </light>
+                        </Lighting>
+                     </effect>
+                     <font>
+                        <Font name="Calibri Bold" size="19.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="update_cl" layoutX="344.0" layoutY="7.0" mnemonicParsing="false" onAction="#update_cli" prefHeight="38.0" prefWidth="145.0" style="-fx-background-color: #3dafc1; -fx-background-radius: 100;" text="Update Clinics">
+                     <effect>
+                        <Lighting diffuseConstant="1.37" specularConstant="0.39" specularExponent="15.61" surfaceScale="2.97">
+                           <bumpInput>
+                              <Shadow />
+                           </bumpInput>
+                           <light>
+                              <Light.Distant />
+                           </light>
+                        </Lighting>
+                     </effect>
+                     <font>
+                        <Font name="Calibri Bold" size="19.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="search_cl" layoutX="501.0" layoutY="7.0" mnemonicParsing="false" onAction="#search_cli" prefHeight="38.0" prefWidth="136.0" style="-fx-background-color: #3dafc1; -fx-background-radius: 100;" text="Search Clinics">
+                     <effect>
+                        <Lighting diffuseConstant="1.37" specularConstant="0.39" specularExponent="15.61" surfaceScale="2.97">
+                           <bumpInput>
+                              <Shadow />
+                           </bumpInput>
+                           <light>
+                              <Light.Distant />
+                           </light>
+                        </Lighting>
+                     </effect>
+                     <font>
+                        <Font name="Calibri Bold" size="19.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btnvicli" layoutX="653.0" layoutY="7.0" mnemonicParsing="false" onAction="#btnviclin" prefHeight="38.0" prefWidth="136.0" style="-fx-background-color: #3dafc1; -fx-background-radius: 100;" text="view Clinics">
+                     <effect>
+                        <Lighting diffuseConstant="1.37" specularConstant="0.39" specularExponent="15.61" surfaceScale="2.97">
+                           <bumpInput>
+                              <Shadow />
+                           </bumpInput>
+                           <light>
+                              <Light.Distant />
+                           </light>
+                        </Lighting>
+                     </effect>
+                     <font>
+                        <Font name="Calibri Bold" size="19.0" />
+                     </font>
+                  </Button>
+               </children>
+            </AnchorPane>
+         </top>
+      </BorderPane>
+   </children>
+</AnchorPane>

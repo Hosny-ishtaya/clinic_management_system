@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="782.0" prefWidth="1048.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxlogin.AdminnfaceController">
+   <children>
+      <BorderPane fx:id="maina" prefHeight="782.0" prefWidth="1048.0">
+         <top>
+            <AnchorPane prefHeight="70.0" prefWidth="1048.0" style="-fx-background-color: #3dafc1;" BorderPane.alignment="CENTER">
+               <children>
+                  <Label layoutX="49.0" layoutY="20.0" text="Admin Portal">
+                     <font>
+                        <Font name="Calibri Bold" size="27.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="434.0" layoutY="17.0" text="Clinic Manaegment System ">
+                     <font>
+                        <Font name="Calibri Bold" size="32.0" />
+                     </font>
+                  </Label>
+                  <AnchorPane layoutX="410.0" layoutY="50.0" prefHeight="9.0" prefWidth="406.0" style="-fx-background-color: #f2f2f2; -fx-background-radius: 100;">
+                     <effect>
+                        <Lighting>
+                           <bumpInput>
+                              <Shadow />
+                           </bumpInput>
+                           <light>
+                              <Light.Distant />
+                           </light>
+                        </Lighting>
+                     </effect>
+                  </AnchorPane>
+                  <AnchorPane layoutX="20.0" layoutY="52.0" prefHeight="9.0" prefWidth="205.0" style="-fx-background-color: #f2f2f2; -fx-background-radius: 100;">
+                     <effect>
+                        <Lighting>
+                           <bumpInput>
+                              <Shadow />
+                           </bumpInput>
+                           <light>
+                              <Light.Distant />
+                           </light>
+                        </Lighting>
+                     </effect>
+                  </AnchorPane>
+               </children>
+            </AnchorPane>
+         </top>
+         <left>
+            <AnchorPane prefHeight="712.0" prefWidth="228.0" style="-fx-background-color: #3dafc1;" BorderPane.alignment="CENTER">
+               <children>
+                  <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="39.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@imagee/adm.png" />
+                     </image>
+                  </ImageView>
+                  <Button fx:id="receptionistd" layoutX="14.0" layoutY="322.0" mnemonicParsing="false" onAction="#receptionistde" prefHeight="54.0" prefWidth="200.0" style="-fx-background-color: #3dafc1; -fx-background-radius: 100;" text="Receptionist Details">
+                     <effect>
+                        <Lighting diffuseConstant="1.66" specularConstant="1.13" surfaceScale="2.97">
+                           <bumpInput>
+                              <Shadow />
+                           </bumpInput>
+                           <light>
+                              <Light.Distant />
+                           </light>
+                        </Lighting>
+                     </effect>
+                     <font>
+                        <Font name="Calibri Bold" size="20.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="doctord" layoutX="14.0" layoutY="240.0" mnemonicParsing="false" onAction="#doctorde" prefHeight="54.0" prefWidth="200.0" style="-fx-background-color: #3dafc1; -fx-background-radius: 100;" text="Doctor Details">
+                     <effect>
+                        <Lighting diffuseConstant="1.66" specularConstant="1.13" surfaceScale="2.97">
+                           <bumpInput>
+                              <Shadow />
+                           </bumpInput>
+                           <light>
+                              <Light.Distant />
+                           </light>
+                        </Lighting>
+                     </effect>
+                     <font>
+                        <Font name="Calibri Bold" size="20.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btnchpa" layoutX="14.0" layoutY="566.0" mnemonicParsing="false" onAction="#btnchpaa" prefHeight="54.0" prefWidth="200.0" style="-fx-background-color: #3dafc1; -fx-background-radius: 100;" text="Change Password">
+                     <effect>
+                        <Lighting diffuseConstant="1.66" specularConstant="1.13" surfaceScale="2.97">
+                           <bumpInput>
+                              <Shadow />
+                           </bumpInput>
+                           <light>
+                              <Light.Distant />
+                           </light>
+                        </Lighting>
+                     </effect>
+                     <font>
+                        <Font name="Calibri Bold" size="20.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btnloggout" layoutX="14.0" layoutY="635.0" mnemonicParsing="false" onAction="#btnloggoutt" prefHeight="54.0" prefWidth="200.0" style="-fx-background-color: #3dafc1; -fx-background-radius: 100;" text="Log Out">
+                     <effect>
+                        <Lighting diffuseConstant="1.66" specularConstant="1.13" surfaceScale="2.97">
+                           <bumpInput>
+                              <Shadow />
+                           </bumpInput>
+                           <light>
+                              <Light.Distant />
+                           </light>
+                        </Lighting>
+                     </effect>
+                     <font>
+                        <Font name="Calibri Bold" size="20.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btnclinicde" layoutX="14.0" layoutY="164.0" mnemonicParsing="false" onAction="#btnclinicdet" prefHeight="54.0" prefWidth="200.0" style="-fx-background-color: #3dafc1; -fx-background-radius: 100;" text="Clinics Details">
+                     <effect>
+                        <Lighting diffuseConstant="1.66" specularConstant="1.13" surfaceScale="2.97">
+                           <bumpInput>
+                              <Shadow />
+                           </bumpInput>
+                           <light>
+                              <Light.Distant />
+                           </light>
+                        </Lighting>
+                     </effect>
+                     <font>
+                        <Font name="Calibri Bold" size="20.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="samplereport" layoutX="14.0" layoutY="400.0" mnemonicParsing="false" onAction="#samplereportt" prefHeight="54.0" prefWidth="200.0" style="-fx-background-color: #3dafc1; -fx-background-radius: 100;" text="Sample Report">
+                     <effect>
+                        <Lighting diffuseConstant="1.66" specularConstant="1.13" surfaceScale="2.97">
+                           <bumpInput>
+                              <Shadow />
+                           </bumpInput>
+                           <light>
+                              <Light.Distant />
+                           </light>
+                        </Lighting>
+                     </effect>
+                     <font>
+                        <Font name="Calibri Bold" size="20.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="doctorreport" layoutX="14.0" layoutY="480.0" mnemonicParsing="false" onAction="#doctorreport" prefHeight="54.0" prefWidth="200.0" style="-fx-background-color: #3dafc1; -fx-background-radius: 100;" text="Doctor Report">
+                     <effect>
+                        <Lighting diffuseConstant="1.66" specularConstant="1.13" surfaceScale="2.97">
+                           <bumpInput>
+                              <Shadow />
+                           </bumpInput>
+                           <light>
+                              <Light.Distant />
+                           </light>
+                        </Lighting>
+                     </effect>
+                     <font>
+                        <Font name="Calibri Bold" size="20.0" />
+                     </font>
+                  </Button>
+               </children>
+            </AnchorPane>
+         </left>
+         <center>
+            <AnchorPane prefHeight="704.0" prefWidth="820.0" style="-fx-background-color: #d7dcdf;" BorderPane.alignment="CENTER">
+               <children>
+                  <ImageView fitHeight="716.0" fitWidth="643.0" layoutX="177.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@imagee/nn.jpg" />
+                     </image>
+                  </ImageView>
+               </children></AnchorPane>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>

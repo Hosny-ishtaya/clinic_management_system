@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="658.0" prefWidth="811.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxlogin.SearchpatienttController">
+   <children>
+      <Label layoutX="48.0" layoutY="130.0" text="First Name:">
+         <font>
+            <Font name="Calibri Bold" size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="65.0" layoutY="234.0" text="birthdate:">
+         <font>
+            <Font name="Calibri Bold" size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="17.0" layoutY="329.0" text="Phone Number:">
+         <font>
+            <Font name="Calibri Bold" size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="418.0" text="Name of doctor:">
+         <font>
+            <Font name="Calibri Bold" size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="46.0" layoutY="512.0" text="Social State:">
+         <font>
+            <Font name="Calibri Bold" size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="446.0" layoutY="130.0" text="last Name:">
+         <font>
+            <Font name="Calibri Bold" size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="462.0" layoutY="234.0" text="Address:">
+         <font>
+            <Font name="Calibri Bold" size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="500.0" layoutY="330.0" text="ID :">
+         <font>
+            <Font name="Calibri Bold" size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="424.0" layoutY="418.0" text="clinic Name:">
+         <font>
+            <Font name="Calibri Bold" size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="459.0" layoutY="512.0" text="Gender:">
+         <font>
+            <Font name="Calibri Bold" size="22.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtF" layoutX="164.0" layoutY="128.0" onAction="#txtF" />
+      <TextField fx:id="txtbirth" layoutX="164.0" layoutY="232.0" onAction="#txtbirth" />
+      <TextField fx:id="txtph" layoutX="164.0" layoutY="327.0" onAction="#txtph" />
+      <TextField fx:id="txtND" layoutX="164.0" layoutY="416.0" onAction="#txtND" />
+      <TextField fx:id="txtSS" layoutX="164.0" layoutY="510.0" onAction="#txtSS" />
+      <TextField fx:id="txtL" layoutX="555.0" layoutY="128.0" onAction="#txtL" />
+      <TextField fx:id="txtA" layoutX="555.0" layoutY="232.0" onAction="#txtA" />
+      <TextField fx:id="txtid" layoutX="555.0" layoutY="327.0" onAction="#txtid" />
+      <TextField fx:id="txtCN" layoutX="555.0" layoutY="416.0" onAction="#txtCN" />
+      <TextField fx:id="txtG" layoutX="555.0" layoutY="510.0" onAction="#txtG" />
+      <Label layoutX="334.0" layoutY="47.0" text="Search Patient">
+         <font>
+            <Font name="Calibri Bold" size="30.0" />
+         </font>
+      </Label>
+      <AnchorPane layoutX="315.0" layoutY="77.0" prefHeight="11.0" prefWidth="213.0" style="-fx-background-color: #3dafc1; -fx-background-radius: 100;">
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant />
+               </light>
+            </Lighting>
+         </effect>
+      </AnchorPane>
+      <Button fx:id="search_p" layoutX="288.0" layoutY="583.0" mnemonicParsing="false" onAction="#search_pa" prefHeight="43.0" prefWidth="273.0" style="-fx-background-color: #3dafc1; -fx-background-radius: 100;" text="Search">
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant />
+               </light>
+            </Lighting>
+         </effect>
+         <font>
+            <Font name="Calibri Bold" size="22.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

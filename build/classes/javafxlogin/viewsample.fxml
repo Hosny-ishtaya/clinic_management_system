@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="658.0" prefWidth="811.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxlogin.ViewsampleController">
+   <children>
+      <TableView fx:id="tab" layoutX="6.0" layoutY="129.0" prefHeight="405.0" prefWidth="805.0">
+        <columns>
+          <TableColumn fx:id="id_s" prefWidth="200.0" text="Id sample" />
+          <TableColumn fx:id="PN" prefWidth="250.0" text="Patient Name" />
+            <TableColumn fx:id="SN" prefWidth="191.0" text="Sample Name" />
+            <TableColumn fx:id="SR" prefWidth="161.0" text="Sample  Result" />
+        </columns>
+      </TableView>
+      <Label layoutX="328.0" layoutY="52.0" text="View Sample">
+         <font>
+            <Font name="Calibri Bold" size="30.0" />
+         </font>
+      </Label>
+      <AnchorPane layoutX="306.0" layoutY="87.0" prefHeight="10.0" prefWidth="200.0" style="-fx-background-color: #3dafc1; -fx-background-radius: 100;">
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant />
+               </light>
+            </Lighting>
+         </effect>
+      </AnchorPane>
+      <Button fx:id="viewsamp" layoutX="269.0" layoutY="578.0" mnemonicParsing="false" onAction="#viewsampp" prefHeight="44.0" prefWidth="273.0" style="-fx-background-color: #3dafc1; -fx-background-radius: 100;" text="View">
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant />
+               </light>
+            </Lighting>
+         </effect>
+         <font>
+            <Font name="Calibri Bold" size="24.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
