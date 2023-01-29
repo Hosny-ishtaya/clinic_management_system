@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="658.0" prefWidth="811.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxlogin.ViewdoctorssController">
+   <children>
+      <TableView fx:id="tab" layoutX="6.0" layoutY="129.0" prefHeight="405.0" prefWidth="805.0">
+        <columns>
+          <TableColumn fx:id="id" editable="false" prefWidth="98.0" text="ID_DOCTOR" />
+          <TableColumn fx:id="un" editable="false" prefWidth="115.0" text="USERNAME" />
+            <TableColumn fx:id="pass" editable="false" prefWidth="127.0" text="PASSWORD" />
+            <TableColumn fx:id="jd" editable="false" prefWidth="122.0" text="JOIN_IN_DATE" />
+            <TableColumn fx:id="Ld" editable="false" prefWidth="168.0" text="LEAVING_DATE" />
+            <TableColumn fx:id="sala" editable="false" prefWidth="174.0" text="SALLARY" />
+        </columns>
+      </TableView>
+      <Label layoutX="328.0" layoutY="66.0" text="View Doctor">
+         <font>
+            <Font name="Calibri Bold" size="30.0" />
+         </font>
+      </Label>
+      <AnchorPane layoutX="299.0" layoutY="97.0" prefHeight="9.0" prefWidth="200.0" style="-fx-background-color: #3dafc1; -fx-background-radius: 100;">
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant />
+               </light>
+            </Lighting>
+         </effect>
+      </AnchorPane>
+      <Button fx:id="view_do" layoutX="263.0" layoutY="570.0" mnemonicParsing="false" onAction="#view_doc" prefHeight="43.0" prefWidth="273.0" style="-fx-background-color: #3dafc1; -fx-background-radius: 100;" text="View">
+         <font>
+            <Font name="Calibri Bold" size="24.0" />
+         </font>
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant />
+               </light>
+            </Lighting>
+         </effect>
+      </Button>
+   </children>
+</AnchorPane>

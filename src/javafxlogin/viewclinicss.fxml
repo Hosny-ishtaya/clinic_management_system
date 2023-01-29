@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="658.0" prefWidth="795.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxlogin.ViewclinicssController">
+   <children>
+      <TableView fx:id="tab" layoutX="7.0" layoutY="149.0" prefHeight="393.0" prefWidth="785.0">
+        <columns>
+          <TableColumn fx:id="idc" editable="false" prefWidth="241.0" text="ID_CLINIC" />
+          <TableColumn fx:id="NC" editable="false" minWidth="0.0" prefWidth="276.0" text="NAME_OF_CLINIC" />
+            <TableColumn fx:id="DC" editable="false" prefWidth="291.0" text="NAME_OF_DOCTOR_IN_CLINICS" />
+        </columns>
+      </TableView>
+      <Label layoutX="328.0" layoutY="87.0" text="View Clinic">
+         <font>
+            <Font name="Cambria Bold" size="30.0" />
+         </font>
+      </Label>
+      <AnchorPane layoutX="305.0" layoutY="120.0" prefHeight="10.0" prefWidth="200.0" style="-fx-background-color: #3dafc1; -fx-background-radius: 100;">
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant />
+               </light>
+            </Lighting>
+         </effect>
+      </AnchorPane>
+      <Button fx:id="view_cl" layoutX="269.0" layoutY="575.0" mnemonicParsing="false" onAction="#view_cli" prefHeight="46.0" prefWidth="273.0" style="-fx-background-color: #3dafc1; -fx-background-radius: 100;" text="View">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant />
+               </light>
+            </Lighting>
+         </effect>
+      </Button>
+   </children>
+</AnchorPane>

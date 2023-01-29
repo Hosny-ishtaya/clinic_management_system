@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="658.0" prefWidth="811.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxlogin.ViewpatienttController">
+   <children>
+      <Label layoutX="326.0" layoutY="52.0" text="View Patient">
+         <font>
+            <Font name="Calibri Bold" size="30.0" />
+         </font>
+      </Label>
+      <AnchorPane layoutX="299.0" layoutY="83.0" prefHeight="9.0" prefWidth="200.0" style="-fx-background-color: #3dafc1; -fx-background-radius: 100;">
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant />
+               </light>
+            </Lighting>
+         </effect>
+      </AnchorPane>
+      <TableView fx:id="tab" layoutX="6.0" layoutY="138.0" prefHeight="417.0" prefWidth="805.0">
+        <columns>
+          <TableColumn fx:id="fn" prefWidth="85.0" text="First Name" />
+          <TableColumn fx:id="ln" prefWidth="79.0" text="last Name" />
+            <TableColumn fx:id="bd" prefWidth="79.0" text="birthdate" />
+            <TableColumn fx:id="ad" prefWidth="64.0" text="Address" />
+            <TableColumn fx:id="ph" prefWidth="79.0" text="Phone No" />
+            <TableColumn fx:id="id" prefWidth="74.0" text="ID" />
+            <TableColumn fx:id="nd" prefWidth="102.0" text="Name doctor" />
+            <TableColumn fx:id="cn" minWidth="6.0" prefWidth="90.0" text="clinic Name" />
+            <TableColumn fx:id="ss" minWidth="0.0" prefWidth="90.0" text="Social State" />
+            <TableColumn fx:id="gen" minWidth="0.0" prefWidth="62.0" text="Gender" />
+        </columns>
+      </TableView>
+      <Button fx:id="view_p" layoutX="269.0" layoutY="586.0" mnemonicParsing="false" onAction="#view_pa" prefHeight="43.0" prefWidth="273.0" style="-fx-background-color: #3dafc1; -fx-background-radius: 100;" text="View">
+         <font>
+            <Font name="Calibri Bold" size="22.0" />
+         </font>
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant />
+               </light>
+            </Lighting>
+         </effect>
+      </Button>
+   </children>
+</AnchorPane>

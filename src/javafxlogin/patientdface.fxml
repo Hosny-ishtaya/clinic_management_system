@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="710.0" prefWidth="818.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxlogin.PatientdfaceController">
+   <children>
+      <BorderPane fx:id="mainpo" layoutY="1.0" prefHeight="710.0" prefWidth="818.0">
+         <top>
+            <AnchorPane prefHeight="52.0" prefWidth="818.0" style="-fx-background-color: #dedbde;" BorderPane.alignment="CENTER">
+               <children>
+                  <Button fx:id="btnaddp" layoutX="23.0" layoutY="7.0" mnemonicParsing="false" onAction="#addpatient" prefHeight="38.0" prefWidth="136.0" style="-fx-background-color: #3dafc1; -fx-background-radius: 100;" text="Add Patient">
+                     <font>
+                        <Font name="Calibri Bold" size="16.0" />
+                     </font>
+                     <effect>
+                        <Lighting diffuseConstant="1.37" specularConstant="0.39" specularExponent="15.61" surfaceScale="2.97">
+                           <bumpInput>
+                              <Shadow />
+                           </bumpInput>
+                           <light>
+                              <Light.Distant />
+                           </light>
+                        </Lighting>
+                     </effect>
+                  </Button>
+                  <Button fx:id="deletep" layoutX="182.0" layoutY="7.0" mnemonicParsing="false" onAction="#deletep" prefHeight="38.0" prefWidth="136.0" style="-fx-background-color: #3dafc1; -fx-background-radius: 100;" text="Delete Patient">
+                     <effect>
+                        <Lighting diffuseConstant="1.37" specularConstant="0.39" specularExponent="15.61" surfaceScale="2.97">
+                           <bumpInput>
+                              <Shadow />
+                           </bumpInput>
+                           <light>
+                              <Light.Distant />
+                           </light>
+                        </Lighting>
+                     </effect>
+                     <font>
+                        <Font name="Calibri Bold" size="16.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="updatep" layoutX="341.0" layoutY="7.0" mnemonicParsing="false" onAction="#updatep" prefHeight="38.0" prefWidth="136.0" style="-fx-background-color: #3dafc1; -fx-background-radius: 100;" text="Update Patient">
+                     <effect>
+                        <Lighting diffuseConstant="1.37" specularConstant="0.39" specularExponent="15.61" surfaceScale="2.97">
+                           <bumpInput>
+                              <Shadow />
+                           </bumpInput>
+                           <light>
+                              <Light.Distant />
+                           </light>
+                        </Lighting>
+                     </effect>
+                     <font>
+                        <Font name="Calibri Bold" size="16.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="searchp" layoutX="500.0" layoutY="7.0" mnemonicParsing="false" onAction="#searchp" prefHeight="38.0" prefWidth="136.0" style="-fx-background-color: #3dafc1; -fx-background-radius: 100;" text="Search Patient">
+                     <effect>
+                        <Lighting diffuseConstant="1.37" specularConstant="0.39" specularExponent="15.61" surfaceScale="2.97">
+                           <bumpInput>
+                              <Shadow />
+                           </bumpInput>
+                           <light>
+                              <Light.Distant />
+                           </light>
+                        </Lighting>
+                     </effect>
+                     <font>
+                        <Font name="Calibri Bold" size="16.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="viewp" layoutX="659.0" layoutY="7.0" mnemonicParsing="false" onAction="#viewp" prefHeight="38.0" prefWidth="136.0" style="-fx-background-color: #3dafc1; -fx-background-radius: 100;" text="View Patient">
+                     <effect>
+                        <Lighting diffuseConstant="1.37" specularConstant="0.39" specularExponent="15.61" surfaceScale="2.97">
+                           <bumpInput>
+                              <Shadow />
+                           </bumpInput>
+                           <light>
+                              <Light.Distant />
+                           </light>
+                        </Lighting>
+                     </effect>
+                     <font>
+                        <Font name="Calibri Bold" size="16.0" />
+                     </font>
+                  </Button>
+               </children>
+            </AnchorPane>
+         </top>
+         <center>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #dedbde;" BorderPane.alignment="CENTER" />
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>

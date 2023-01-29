@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="782.0" prefWidth="1047.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxlogin.DoctorfaceController">
+   <children>
+      <BorderPane fx:id="maindp" prefHeight="782.0" prefWidth="1048.0">
+         <left>
+            <AnchorPane prefHeight="698.0" prefWidth="228.0" style="-fx-background-color: #3dafc1;" BorderPane.alignment="CENTER">
+               <children>
+                  <Button fx:id="btpd" layoutX="14.0" layoutY="198.0" mnemonicParsing="false" onAction="#patientde" prefHeight="54.0" prefWidth="200.0" style="-fx-background-color: #3dafc1; -fx-background-radius: 100;" text="Patient Details">
+                     <effect>
+                        <Lighting diffuseConstant="1.66" specularConstant="1.13" surfaceScale="2.96">
+                           <bumpInput>
+                              <Shadow />
+                           </bumpInput>
+                           <light>
+                              <Light.Distant />
+                           </light>
+                        </Lighting>
+                     </effect>
+                     <font>
+                        <Font name="Calibri Bold" size="20.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btnlogoutt" layoutX="15.0" layoutY="375.0" mnemonicParsing="false" onAction="#logoutt" prefHeight="54.0" prefWidth="200.0" style="-fx-background-color: #3dafc1; -fx-background-radius: 100;" text="Log Out">
+                     <font>
+                        <Font name="Calibri Bold" size="20.0" />
+                     </font>
+                     <effect>
+                        <Lighting diffuseConstant="1.66" specularConstant="1.13" surfaceScale="2.96">
+                           <bumpInput>
+                              <Shadow />
+                           </bumpInput>
+                           <light>
+                              <Light.Distant />
+                           </light>
+                        </Lighting>
+                     </effect>
+                  </Button>
+                  <Button fx:id="chpass" layoutX="15.0" layoutY="290.0" mnemonicParsing="false" onAction="#chpassword" prefHeight="54.0" prefWidth="200.0" style="-fx-background-color: #3dafc1; -fx-background-radius: 100;" text="Change Password">
+                     <effect>
+                        <Lighting diffuseConstant="1.66" specularConstant="1.13" surfaceScale="2.96">
+                           <bumpInput>
+                              <Shadow />
+                           </bumpInput>
+                           <light>
+                              <Light.Distant />
+                           </light>
+                        </Lighting>
+                     </effect>
+                     <font>
+                        <Font name="Calibri Bold" size="20.0" />
+                     </font>
+                  </Button>
+                  <ImageView fitHeight="135.0" fitWidth="162.0" layoutX="47.0" layoutY="24.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@imagee/docc.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+         </left>
+         <top>
+            <AnchorPane prefHeight="70.0" prefWidth="1047.0" style="-fx-background-color: #3dafc1;" BorderPane.alignment="CENTER">
+               <children>
+                  <Label layoutX="29.0" layoutY="18.0" text="Doctor Portal">
+                     <font>
+                        <Font name="Cambria Bold" size="27.0" />
+                     </font>
+                  </Label>
+                  <AnchorPane layoutX="13.0" layoutY="52.0" prefHeight="8.0" prefWidth="200.0" style="-fx-background-color: #f2f2f2; -fx-background-radius: 90;">
+                     <effect>
+                        <Lighting diffuseConstant="1.27">
+                           <bumpInput>
+                              <Shadow />
+                           </bumpInput>
+                           <light>
+                              <Light.Distant />
+                           </light>
+                        </Lighting>
+                     </effect>
+                  </AnchorPane>
+                  <Label layoutX="430.0" layoutY="18.0" prefHeight="37.0" prefWidth="375.0" text="Clinic Manadement System ">
+                     <font>
+                        <Font name="Calibri Bold" size="32.0" />
+                     </font>
+                  </Label>
+                  <AnchorPane layoutX="401.0" layoutY="48.0" prefHeight="8.0" prefWidth="411.0" style="-fx-background-color: #f2f2f2; -fx-background-radius: 90;">
+                     <effect>
+                        <Lighting diffuseConstant="1.27">
+                           <bumpInput>
+                              <Shadow />
+                           </bumpInput>
+                           <light>
+                              <Light.Distant />
+                           </light>
+                        </Lighting>
+                     </effect>
+                  </AnchorPane>
+               </children>
+            </AnchorPane>
+         </top>
+         <center>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #d7dcdf;" BorderPane.alignment="CENTER">
+               <children>
+                  <ImageView fitHeight="712.0" fitWidth="820.0" layoutX="176.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@imagee/nn.jpg" />
+                     </image></ImageView>
+               </children>
+            </AnchorPane>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>

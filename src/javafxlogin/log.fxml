@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="773.0" prefWidth="1044.0" style="-fx-background-color: #ededed;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxlogin.loginController">
+   <children>
+      <AnchorPane layoutX="562.0" layoutY="261.0" prefHeight="493.0" prefWidth="445.0" style="-fx-background-color: #41bec8; -fx-background-radius: 10;">
+         <children>
+            <TextField fx:id="tfuser" blendMode="SRC_ATOP" layoutX="53.0" layoutY="122.0" onAction="#user" opacity="0.4" prefHeight="40.0" prefWidth="347.0" promptText="User name" style="-fx-background-radius: 90; -fx-background-color: #ffffff;">
+               <font>
+                  <Font name="Baskerville Old Face" size="19.0" />
+               </font>
+               <effect>
+                  <InnerShadow choke="0.6" />
+               </effect></TextField>
+            <Button fx:id="btnsignin" blendMode="HARD_LIGHT" layoutX="50.0" layoutY="298.0" mnemonicParsing="false" onAction="#signin" prefHeight="31.0" prefWidth="353.0" style="-fx-background-color: #3aa8de; -fx-background-radius: 90;" text="Sign In" textFill="WHITE" underline="true">
+               <effect>
+                  <Lighting diffuseConstant="0.71" specularConstant="1.98">
+                     <bumpInput>
+                        <Shadow />
+                     </bumpInput>
+                     <light>
+                        <Light.Distant />
+                     </light>
+                  </Lighting>
+               </effect>
+               <font>
+                  <Font name="Tahoma Bold" size="19.0" />
+               </font></Button>
+            <Label layoutX="173.0" layoutY="39.0" text="Sign In" textFill="#f8f8f8">
+               <font>
+                  <Font name="Tahoma Bold" size="29.0" />
+               </font>
+               <effect>
+                  <Lighting diffuseConstant="1.32">
+                     <bumpInput>
+                        <Shadow />
+                     </bumpInput>
+                     <light>
+                        <Light.Distant />
+                     </light>
+                  </Lighting>
+               </effect>
+            </Label>
+            <Label layoutX="161.0" layoutY="383.0" text="forgot password?" textFill="#fcfcfc" underline="true">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="219.0" layoutY="356.0" text="or" textFill="WHITE" />
+            <AnchorPane layoutX="115.0" layoutY="76.0" prefHeight="12.0" prefWidth="216.0" style="-fx-background-color: #f2f2f2; -fx-background-radius: 90;">
+               <effect>
+                  <Lighting diffuseConstant="1.17" specularConstant="2.0">
+                     <bumpInput>
+                        <Shadow />
+                     </bumpInput>
+                     <light>
+                        <Light.Distant />
+                     </light>
+                  </Lighting>
+               </effect>
+            </AnchorPane>
+            <ImageView fitHeight="31.0" fitWidth="29.0" layoutX="23.0" layoutY="126.0">
+               <image>
+                  <Image url="@imagee/user.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="31.0" fitWidth="30.0" layoutX="23.0" layoutY="195.0">
+               <image>
+                  <Image url="@imagee/password.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="warnlabel" layoutX="127.0" layoutY="458.0" onDragDetected="#wlabel" prefHeight="21.0" prefWidth="216.0" textFill="#f50606" />
+            <PasswordField fx:id="tspass" layoutX="52.0" layoutY="186.0" onAction="#passwo" opacity="0.4" prefHeight="40.0" prefWidth="347.0" promptText="password" style="-fx-background-color: #ffffff; -fx-background-radius: 90;">
+               <effect>
+                  <InnerShadow choke="0.6" />
+               </effect>
+            </PasswordField>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="-3.0" prefHeight="781.0" prefWidth="458.0" style="-fx-background-color: #41bec8;">
+         <children>
+            <Label layoutX="164.0" layoutY="145.0" prefHeight="215.0" prefWidth="231.0" text="wellcome" textFill="#f8f8f8">
+               <font>
+                  <Font name="Britannic Bold" size="43.0" />
+               </font>
+               <effect>
+                  <Lighting diffuseConstant="1.49" specularConstant="2.0">
+                     <bumpInput>
+                        <Shadow />
+                     </bumpInput>
+                     <light>
+                        <Light.Distant />
+                     </light>
+                  </Lighting>
+               </effect>
+            </Label>
+            <Label layoutX="73.0" layoutY="253.0" prefHeight="85.0" prefWidth="445.0" text="clinics management " textFill="#f8f8f8" textOverrun="CLIP">
+               <font>
+                  <Font name="Britannic Bold" size="40.0" />
+               </font>
+               <effect>
+                  <Lighting diffuseConstant="1.49">
+                     <bumpInput>
+                        <Shadow />
+                     </bumpInput>
+                     <light>
+                        <Light.Distant />
+                     </light>
+                  </Lighting>
+               </effect>
+            </Label>
+            <AnchorPane layoutX="73.0" layoutY="316.0" prefHeight="12.0" prefWidth="353.0" style="-fx-background-color: #e7e7e7; -fx-background-radius: 90;">
+               <effect>
+                  <Lighting bumpInput="$null" diffuseConstant="1.12" specularConstant="0.66" specularExponent="0.0" surfaceScale="0.0">
+                     <light>
+                        <Light.Distant />
+                     </light>
+                  </Lighting>
+               </effect>
+            </AnchorPane>
+            <ImageView fitHeight="239.0" fitWidth="347.0" layoutX="78.0" layoutY="393.0">
+               <image>
+                  <Image url="@imagee/tt.gif" />
+               </image>
+            </ImageView>
+            <AnchorPane layoutX="17.0" layoutY="632.0" prefHeight="12.0" prefWidth="466.0" style="-fx-background-color: #8e552c;" />
+            <AnchorPane layoutX="17.0" layoutY="385.0" prefHeight="12.0" prefWidth="466.0" style="-fx-background-color: #016558;" />
+            <AnchorPane layoutX="66.0" layoutY="350.0" prefHeight="337.0" prefWidth="15.0" style="-fx-background-color: #d36800;" />
+            <AnchorPane layoutX="418.0" layoutY="350.0" prefHeight="337.0" prefWidth="15.0" style="-fx-background-color: #6dcead;" />
+            <Button fx:id="btnback" layoutX="17.0" layoutY="6.0" mnemonicParsing="false" onAction="#back" prefHeight="27.0" prefWidth="29.0" style="-fx-background-color: #41bec8;" text="&lt;">
+               <font>
+                  <Font size="13.0" />
+               </font>
+               <effect>
+                  <Lighting diffuseConstant="1.44" specularConstant="1.08" surfaceScale="2.96">
+                     <bumpInput>
+                        <Shadow />
+                     </bumpInput>
+                     <light>
+                        <Light.Distant />
+                     </light>
+                  </Lighting>
+               </effect>
+            </Button>
+         </children>
+      </AnchorPane>
+      <ImageView fitHeight="142.0" fitWidth="148.0" layoutX="721.0" layoutY="52.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@imagee/unlock-icon.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="btnx" layoutX="1007.0" layoutY="6.0" mnemonicParsing="false" onAction="#exit" prefHeight="31.0" prefWidth="28.0" style="-fx-background-color: #41bec8;" text="X" textFill="WHITE">
+         <effect>
+            <Lighting diffuseConstant="1.24" specularConstant="1.32">
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant />
+               </light>
+            </Lighting>
+         </effect></Button>
+      <Button layoutX="971.0" layoutY="6.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="30.0" style="-fx-background-color: #41bec8;" text="-" textFill="WHITE">
+         <effect>
+            <Lighting diffuseConstant="1.29" specularConstant="1.37">
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant />
+               </light>
+            </Lighting>
+         </effect></Button>
+      <AnchorPane layoutX="515.0" prefHeight="781.0" prefWidth="15.0" style="-fx-background-color: #e7e7e7;">
+         <effect>
+            <Shadow color="#1e1d1d" radius="27.88" width="92.52" />
+         </effect>
+      </AnchorPane>
+      <ImageView fitHeight="31.0" fitWidth="30.0" layoutX="32.0" layoutY="136.0" pickOnBounds="true" preserveRatio="true" />
+   </children>
+</AnchorPane>

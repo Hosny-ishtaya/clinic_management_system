@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.effect.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="710.0" prefWidth="824.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxlogin.ReceptiondetailsController">
+   <children>
+      <BorderPane fx:id="mainredet" layoutX="-2.0" layoutY="-4.0" prefHeight="716.0" prefWidth="824.0">
+         <top>
+            <AnchorPane prefHeight="52.0" prefWidth="830.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Button fx:id="add_r" layoutX="23.0" layoutY="7.0" mnemonicParsing="false" onAction="#add_r" prefHeight="38.0" prefWidth="136.0" style="-fx-background-color: #3dafc1; -fx-background-radius: 100;" text="Add Reception">
+                     <effect>
+                        <Lighting diffuseConstant="1.36" specularConstant="0.9" specularExponent="15.61" surfaceScale="2.97">
+                           <bumpInput>
+                              <Shadow />
+                           </bumpInput>
+                           <light>
+                              <Light.Distant />
+                           </light>
+                        </Lighting>
+                     </effect>
+                     <font>
+                        <Font name="Calibri Bold" size="18.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="delete_r" layoutX="164.0" layoutY="7.0" mnemonicParsing="false" onAction="#delete_r" prefHeight="38.0" prefWidth="154.0" style="-fx-background-color: #3dafc1; -fx-background-radius: 100;" text="Delete Reception">
+                     <effect>
+                        <Lighting diffuseConstant="1.36" specularConstant="0.9" specularExponent="15.61" surfaceScale="2.97">
+                           <bumpInput>
+                              <Shadow />
+                           </bumpInput>
+                           <light>
+                              <Light.Distant />
+                           </light>
+                        </Lighting>
+                     </effect>
+                     <font>
+                        <Font name="Calibri Bold" size="18.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="update_r" layoutX="324.0" layoutY="7.0" mnemonicParsing="false" onAction="#update_r" prefHeight="38.0" prefWidth="159.0" style="-fx-background-color: #3dafc1; -fx-background-radius: 100;" text="Update Reception">
+                     <effect>
+                        <Lighting diffuseConstant="1.36" specularConstant="0.9" specularExponent="15.61" surfaceScale="2.97">
+                           <bumpInput>
+                              <Shadow />
+                           </bumpInput>
+                           <light>
+                              <Light.Distant />
+                           </light>
+                        </Lighting>
+                     </effect>
+                     <font>
+                        <Font name="Calibri Bold" size="18.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="search_r" layoutX="493.0" layoutY="7.0" mnemonicParsing="false" onAction="#search_r" prefHeight="38.0" prefWidth="154.0" style="-fx-background-color: #3dafc1; -fx-background-radius: 100;" text="Search Reception">
+                     <effect>
+                        <Lighting diffuseConstant="1.36" specularConstant="0.9" specularExponent="15.61" surfaceScale="2.97">
+                           <bumpInput>
+                              <Shadow />
+                           </bumpInput>
+                           <light>
+                              <Light.Distant />
+                           </light>
+                        </Lighting>
+                     </effect>
+                     <font>
+                        <Font name="Calibri Bold" size="18.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btnviewr" layoutX="659.0" layoutY="7.0" mnemonicParsing="false" onAction="#btnviewre" prefHeight="38.0" prefWidth="143.0" style="-fx-background-color: #3dafc1; -fx-background-radius: 100;" text="View Reception">
+                     <effect>
+                        <Lighting diffuseConstant="1.36" specularConstant="0.9" specularExponent="15.61" surfaceScale="2.97">
+                           <bumpInput>
+                              <Shadow />
+                           </bumpInput>
+                           <light>
+                              <Light.Distant />
+                           </light>
+                        </Lighting>
+                     </effect>
+                     <font>
+                        <Font name="Calibri Bold" size="18.0" />
+                     </font>
+                  </Button>
+               </children>
+            </AnchorPane>
+         </top>
+         <center>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Label layoutX="86.0" layoutY="193.0" text="ID:">
+                     <font>
+                        <Font name="Calibri Bold" size="22.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="14.0" layoutY="316.0" text="Username:">
+                     <font>
+                        <Font name="Calibri Bold" size="22.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="17.0" layoutY="445.0" text="Password:">
+                     <font>
+                        <Font name="Calibri Bold" size="22.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="406.0" layoutY="193.0" text="Join In Date:">
+                     <font>
+                        <Font name="Calibri Bold" size="22.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="450.0" layoutY="445.0" text="Sallary:">
+                     <font>
+                        <Font name="Calibri Bold" size="22.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="401.0" layoutY="316.0" text="Leaving Date:">
+                     <font>
+                        <Font name="Calibri Bold" size="22.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="txtid" layoutX="132.0" layoutY="191.0" onAction="#txtid" />
+                  <TextField fx:id="txtu" layoutX="132.0" layoutY="317.0" onAction="#txtu" />
+                  <TextField fx:id="txtp" layoutX="132.0" layoutY="443.0" onAction="#txtp" />
+                  <TextField fx:id="txtjd" layoutX="525.0" layoutY="191.0" onAction="#txtjd" />
+                  <TextField fx:id="txtld" layoutX="533.0" layoutY="317.0" onAction="#txtld" />
+                  <TextField fx:id="txts" layoutX="525.0" layoutY="443.0" onAction="#txts" />
+               </children>
+            </AnchorPane>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>

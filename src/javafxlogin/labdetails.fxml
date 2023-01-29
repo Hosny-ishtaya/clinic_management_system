@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.effect.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="710.0" prefWidth="828.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxlogin.LabdetailsController">
+   <children>
+      <BorderPane fx:id="maindetsample" layoutY="-7.0" prefHeight="710.0" prefWidth="829.0">
+         <top>
+            <AnchorPane prefHeight="52.0" prefWidth="829.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Button fx:id="addsample" layoutX="36.0" layoutY="11.0" mnemonicParsing="false" onAction="#addsamplee" prefHeight="38.0" prefWidth="142.0" style="-fx-background-color: #3dafc1; -fx-background-radius: 100;" text="Add Sample">
+                     <effect>
+                        <Lighting diffuseConstant="1.37" specularConstant="0.39" specularExponent="15.61" surfaceScale="2.97">
+                           <bumpInput>
+                              <Shadow />
+                           </bumpInput>
+                           <light>
+                              <Light.Distant />
+                           </light>
+                        </Lighting>
+                     </effect>
+                     <font>
+                        <Font name="Calibri Bold" size="18.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="deletesample" layoutX="191.0" layoutY="11.0" mnemonicParsing="false" onAction="#deletesamplee" prefHeight="38.0" prefWidth="142.0" style="-fx-background-color: #3dafc1; -fx-background-radius: 100;" text="Delete Sample">
+                     <effect>
+                        <Lighting diffuseConstant="1.37" specularConstant="0.39" specularExponent="15.61" surfaceScale="2.97">
+                           <bumpInput>
+                              <Shadow />
+                           </bumpInput>
+                           <light>
+                              <Light.Distant />
+                           </light>
+                        </Lighting>
+                     </effect>
+                     <font>
+                        <Font name="Calibri Bold" size="18.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="updatesample" layoutX="344.0" layoutY="11.0" mnemonicParsing="false" onAction="#updatesamplee" prefHeight="38.0" prefWidth="142.0" style="-fx-background-color: #3dafc1; -fx-background-radius: 100;" text="Update Sample">
+                     <effect>
+                        <Lighting diffuseConstant="1.37" specularConstant="0.39" specularExponent="15.61" surfaceScale="2.97">
+                           <bumpInput>
+                              <Shadow />
+                           </bumpInput>
+                           <light>
+                              <Light.Distant />
+                           </light>
+                        </Lighting>
+                     </effect>
+                     <font>
+                        <Font name="Calibri Bold" size="18.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="searchsample" layoutX="503.0" layoutY="11.0" mnemonicParsing="false" onAction="#searchsamplee" prefHeight="38.0" prefWidth="142.0" style="-fx-background-color: #3dafc1; -fx-background-radius: 100;" text="Search Sample">
+                     <effect>
+                        <Lighting diffuseConstant="1.37" specularConstant="0.39" specularExponent="15.61" surfaceScale="2.97">
+                           <bumpInput>
+                              <Shadow />
+                           </bumpInput>
+                           <light>
+                              <Light.Distant />
+                           </light>
+                        </Lighting>
+                     </effect>
+                     <font>
+                        <Font name="Calibri Bold" size="18.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="viewsample" layoutX="662.0" layoutY="11.0" mnemonicParsing="false" onAction="#viewsample" prefHeight="38.0" prefWidth="142.0" style="-fx-background-color: #3dafc1; -fx-background-radius: 100;" text="View Sample">
+                     <effect>
+                        <Lighting diffuseConstant="1.37" specularConstant="0.39" specularExponent="15.61" surfaceScale="2.97">
+                           <bumpInput>
+                              <Shadow />
+                           </bumpInput>
+                           <light>
+                              <Light.Distant />
+                           </light>
+                        </Lighting>
+                     </effect>
+                     <font>
+                        <Font name="Calibri Bold" size="18.0" />
+                     </font>
+                  </Button>
+               </children>
+            </AnchorPane>
+         </top>
+         <center>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Label layoutX="112.0" layoutY="110.0" text="ID Sample :">
+                     <font>
+                        <Font name="Calibri Bold" size="20.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="436.0" layoutY="110.0" text=" Patient Name :">
+                     <font>
+                        <Font name="Calibri Bold" size="20.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="80.0" layoutY="234.0" text="Sample Name :">
+                     <font>
+                        <Font name="Calibri Bold" size="20.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="437.0" layoutY="234.0" text="Resalt Sample :">
+                     <font>
+                        <Font name="Calibri Bold" size="20.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="ids" layoutX="206.0" layoutY="106.0" onAction="#ids" />
+                  <TextField fx:id="sn" layoutX="206.0" layoutY="230.0" onAction="#sn" />
+                  <TextField fx:id="pn" layoutX="565.0" layoutY="106.0" onAction="#pn" />
+                  <TextField fx:id="rs" layoutX="565.0" layoutY="230.0" onAction="#rs" />
+               </children>
+            </AnchorPane>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>

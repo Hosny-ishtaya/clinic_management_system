@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="658.0" prefWidth="810.0" style="-fx-background-color: #dedbde;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxlogin.DeletepatienttController">
+   <children>
+      <Label layoutX="58.0" layoutY="130.0" text="First Name:">
+         <font>
+            <Font name="Calibri Bold" size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="450.0" layoutY="130.0" text="last Name:">
+         <font>
+            <Font name="Calibri Bold" size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="79.0" layoutY="234.0" text="birthdate:">
+         <font>
+            <Font name="Calibri Bold" size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="28.0" layoutY="329.0" text="Phone Number:">
+         <font>
+            <Font name="Calibri Bold" size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="419.0" text="Name of doctor:">
+         <font>
+            <Font name="Calibri Bold" size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="45.0" layoutY="512.0" text="Social State:">
+         <font>
+            <Font name="Calibri Bold" size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="467.0" layoutY="234.0" text="Address:">
+         <font>
+            <Font name="Calibri Bold" size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="507.0" layoutY="329.0" text="ID:">
+         <font>
+            <Font name="Calibri Bold" size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="445.0" layoutY="419.0" text="clinic Name:">
+         <font>
+            <Font name="Calibri Bold" size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="470.0" layoutY="512.0" text="Gender:">
+         <font>
+            <Font name="Calibri Bold" size="22.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtF" layoutX="173.0" layoutY="128.0" onAction="#txtFN" />
+      <TextField fx:id="txtbirth" layoutX="173.0" layoutY="232.0" onAction="#txtbirth" />
+      <TextField fx:id="txtph" layoutX="173.0" layoutY="327.0" onAction="#txtph" />
+      <TextField fx:id="txtND" layoutX="173.0" layoutY="417.0" onAction="#txtND" />
+      <TextField fx:id="txtss" layoutX="173.0" layoutY="510.0" onAction="#txtss" />
+      <TextField fx:id="txtG" layoutX="557.0" layoutY="510.0" onAction="#txtG" />
+      <TextField fx:id="txtCN" layoutX="557.0" layoutY="417.0" onAction="#txtCN" />
+      <TextField fx:id="txtid" layoutX="557.0" layoutY="327.0" onAction="#txtid" />
+      <TextField fx:id="txtA" layoutX="557.0" layoutY="232.0" onAction="#txtA" />
+      <TextField fx:id="txtL" layoutX="557.0" layoutY="128.0" onAction="#txtLN" />
+      <Label layoutX="316.0" layoutY="43.0" text="Delete Patient">
+         <font>
+            <Font name="Calibri Bold" size="30.0" />
+         </font>
+      </Label>
+      <AnchorPane layoutX="298.0" layoutY="78.0" prefHeight="11.0" prefWidth="214.0" style="-fx-background-color: #3dafc1; -fx-background-radius: 100;">
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant />
+               </light>
+            </Lighting>
+         </effect>
+      </AnchorPane>
+      <Button fx:id="delete_pa" layoutX="284.0" layoutY="581.0" mnemonicParsing="false" onAction="#delete_pat" prefHeight="43.0" prefWidth="273.0" style="-fx-background-color: #3dafc1; -fx-background-radius: 100;" text="Delete">
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant />
+               </light>
+            </Lighting>
+         </effect>
+         <font>
+            <Font name="Calibri Bold" size="23.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
