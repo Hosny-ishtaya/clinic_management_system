@@ -1,0 +1,56 @@
+Insert into HR.CLINICS (DOCTORS_WORK_IN,ID,NAME_OF_CLINICS) values ('hamza',3,'Esoteric Clinics');
+Insert into HR.CLINICS (DOCTORS_WORK_IN,ID,NAME_OF_CLINICS) values ('jamal',5,'Esoteric Clinics');
+Insert into HR.CLINICS (DOCTORS_WORK_IN,ID,NAME_OF_CLINICS) values ('asmaa',10,'Orthopedic Clinic');
+Insert into HR.CLINICS (DOCTORS_WORK_IN,ID,NAME_OF_CLINICS) values ('james',2,'Dermatology Clinic');
+Insert into HR.CLINICS (DOCTORS_WORK_IN,ID,NAME_OF_CLINICS) values ('sara',1,'Dermatology Clinic');
+Insert into HR.CLINICS (DOCTORS_WORK_IN,ID,NAME_OF_CLINICS) values ('firas',8,'Orthopedic Clinic');
+
+
+Insert into HR.DOCTOR (USERNAME,PASSWORD,JOINING_DATE,LEAVING_DATE,SALARY,DOCTOR_ID) values ('hamza','hamza123',to_date('06-AUG-09','DD-MON-RR'),to_date('18-OCT-22','DD-MON-RR'),8000,3);
+Insert into HR.DOCTOR (USERNAME,PASSWORD,JOINING_DATE,LEAVING_DATE,SALARY,DOCTOR_ID) values ('jamal','jamal123',to_date('14-AUG-09','DD-MON-RR'),to_date('28-DEC-23','DD-MON-RR'),8000,5);
+Insert into HR.DOCTOR (USERNAME,PASSWORD,JOINING_DATE,LEAVING_DATE,SALARY,DOCTOR_ID) values ('firas','1234',to_date('22-MAY-14','DD-MON-RR'),to_date('06-NOV-20','DD-MON-RR'),10000,8);
+Insert into HR.DOCTOR (USERNAME,PASSWORD,JOINING_DATE,LEAVING_DATE,SALARY,DOCTOR_ID) values ('james','123321',to_date('10-JUL-93','DD-MON-RR'),to_date('22-APR-11','DD-MON-RR'),12000,2);
+Insert into HR.DOCTOR (USERNAME,PASSWORD,JOINING_DATE,LEAVING_DATE,SALARY,DOCTOR_ID) values ('sara','845213',to_date('14-OCT-99','DD-MON-RR'),to_date('07-AUG-09','DD-MON-RR'),7000,1);
+Insert into HR.DOCTOR (USERNAME,PASSWORD,JOINING_DATE,LEAVING_DATE,SALARY,DOCTOR_ID) values ('asmaa','45692',to_date('17-APR-05','DD-MON-RR'),to_date('30-NOV-12','DD-MON-RR'),10000,10);
+
+
+Insert into HR.LABS (PATIANT,SAMPLES_NAME,SAMPLES_RESULTS,ID) values ('mohammed','blood type','O-',1);
+Insert into HR.LABS (PATIANT,SAMPLES_NAME,SAMPLES_RESULTS,ID) values ('waseem','biopcy','negative',2);
+Insert into HR.LABS (PATIANT,SAMPLES_NAME,SAMPLES_RESULTS,ID) values ('kamal','blood type','A+',8);
+Insert into HR.LABS (PATIANT,SAMPLES_NAME,SAMPLES_RESULTS,ID) values ('fatima','amipa','negative',10);
+
+
+Insert into HR.MANGER (USERNAME,PASSWORD,JOINING_DATE,LEAVING_DATE,SALARY,MANGER_ID) values ('Hamza','hamza11112000***',to_date('11-NOV-00','DD-MON-RR'),to_date('22-OCT-20','DD-MON-RR'),13000,11821075);
+Insert into HR.MANGER (USERNAME,PASSWORD,JOINING_DATE,LEAVING_DATE,SALARY,MANGER_ID) values ('jamal','admin2',to_date('01-SEP-01','DD-MON-RR'),to_date('05-MAY-05','DD-MON-RR'),6000,117468957);
+Insert into HR.MANGER (USERNAME,PASSWORD,JOINING_DATE,LEAVING_DATE,SALARY,MANGER_ID) values ('lina','admin4',to_date('08-DEC-07','DD-MON-RR'),to_date('24-OCT-14','DD-MON-RR'),11000,124469853);
+Insert into HR.MANGER (USERNAME,PASSWORD,JOINING_DATE,LEAVING_DATE,SALARY,MANGER_ID) values ('tsharls','admin3',to_date('06-AUG-06','DD-MON-RR'),to_date('03-MAR-19','DD-MON-RR'),12000,110542874);
+
+
+Insert into HR.PASSWORD_OF_EMPLOYEE (PASSWORD,NAME) values ('admin1','hamza');
+Insert into HR.PASSWORD_OF_EMPLOYEE (PASSWORD,NAME) values ('admin2','jamal');
+Insert into HR.PASSWORD_OF_EMPLOYEE (PASSWORD,NAME) values ('admin4','lina');
+Insert into HR.PASSWORD_OF_EMPLOYEE (PASSWORD,NAME) values ('admin3','tsharls');
+Insert into HR.PASSWORD_OF_EMPLOYEE (PASSWORD,NAME) values ('firas123','firas');
+Insert into HR.PASSWORD_OF_EMPLOYEE (PASSWORD,NAME) values ('123321','james');
+Insert into HR.PASSWORD_OF_EMPLOYEE (PASSWORD,NAME) values ('45692','asmaa');
+Insert into HR.PASSWORD_OF_EMPLOYEE (PASSWORD,NAME) values ('sara123','sara');
+
+
+Insert into HR.PATIENT (FIRST_NAME,LAST_NAME,BIRTHDATE,ADDRESS,PHONE_NUMBER,ID_PAT,SOCIAL_STATE,CLINIC_NAME,NAME_DOCTOR,GENDER) values ('mohammed','shaheen',to_date('09-OCT-95','DD-MON-RR'),'Tubas',598753682,459632,'single','Dermatology Clinic','sara','male');
+Insert into HR.PATIENT (FIRST_NAME,LAST_NAME,BIRTHDATE,ADDRESS,PHONE_NUMBER,ID_PAT,SOCIAL_STATE,CLINIC_NAME,NAME_DOCTOR,GENDER) values ('waseem','hamed',to_date('22-SEP-00','DD-MON-RR'),'qudes',599648940,123,'single','Dermatology Clinics','james','male');
+Insert into HR.PATIENT (FIRST_NAME,LAST_NAME,BIRTHDATE,ADDRESS,PHONE_NUMBER,ID_PAT,SOCIAL_STATE,CLINIC_NAME,NAME_DOCTOR,GENDER) values ('kamal','fadi',to_date('15-JUL-72','DD-MON-RR'),'nablus',596357452,147896,'married','Orthopedic Clinic','firas','male');
+Insert into HR.PATIENT (FIRST_NAME,LAST_NAME,BIRTHDATE,ADDRESS,PHONE_NUMBER,ID_PAT,SOCIAL_STATE,CLINIC_NAME,NAME_DOCTOR,GENDER) values ('fatima','khaled',to_date('25-AUG-01','DD-MON-RR'),'Ramallah',597564821,167943,'single','Orthopedic Clinic','asmaa','Female');
+
+
+Insert into HR.PERSON (FIRST_NAME,LAST_NAME,PHONE_NUMBER,GENDER,MARITIAL_STATUS,SOCIAL_NUMBER,ADDRESS,BIRTHDAY,EMAIL) values ('james','Khaleel',599648940,'Male','single',11821075,'FaraCamp',to_date('11-NOV-00','DD-MON-RR'),'james.sa.khaleel@gmail.com');
+Insert into HR.PERSON (FIRST_NAME,LAST_NAME,PHONE_NUMBER,GENDER,MARITIAL_STATUS,SOCIAL_NUMBER,ADDRESS,BIRTHDAY,EMAIL) values ('firas','Khalid',599534969,'Male','single',117468957,'tubas',to_date('14-JUN-93','DD-MON-RR'),'jamal@gmail.com');
+Insert into HR.PERSON (FIRST_NAME,LAST_NAME,PHONE_NUMBER,GENDER,MARITIAL_STATUS,SOCIAL_NUMBER,ADDRESS,BIRTHDAY,EMAIL) values ('sara','showket',595346951,'Female','single',124469853,'quds',to_date('29-MAY-04','DD-MON-RR'),'example3@gmail.com');
+Insert into HR.PERSON (FIRST_NAME,LAST_NAME,PHONE_NUMBER,GENDER,MARITIAL_STATUS,SOCIAL_NUMBER,ADDRESS,BIRTHDAY,EMAIL) values ('asmaa','hafez',597854236,'Female','married',110542874,'jarico',to_date('06-MAR-89','DD-MON-RR'),'asmaaa@gmail.com');
+
+
+Insert into HR.PHARMACY (ID,DRUGS,COST) values ('6','practamol',41);
+Insert into HR.PHARMACY (ID,DRUGS,COST) values ('9','Vitamin B12',100);
+Insert into HR.PHARMACY (ID,DRUGS,COST) values ('5','panadol',5);
+Insert into HR.PHARMACY (ID,DRUGS,COST) values ('4','aspren',15);
+Insert into HR.PHARMACY (ID,DRUGS,COST) values ('2','relaxon',40);
+Insert into HR.PHARMACY (ID,DRUGS,COST) values ('3','metrazol',120);
